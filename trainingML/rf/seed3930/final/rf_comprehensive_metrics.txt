@@ -1,0 +1,170 @@
+ML Pipeline Comprehensive Report
+==================================================
+
+NESTED CROSS-VALIDATION RESULTS (Unbiased Performance)
+-------------------------------------------------------
+Mean test accuracy: 0.632 ± 0.093
+All test accuracies: [0.6470588235294118, 0.7647058823529411, 0.5, 0.6875, 0.5625]
+Best hyperparameters per fold:
+  Fold 1: {'clf__max_depth': None, 'clf__n_estimators': 200, 'select__k': 70}
+  Fold 2: {'clf__max_depth': None, 'clf__n_estimators': 100, 'select__k': 40}
+  Fold 3: {'clf__max_depth': 5, 'clf__n_estimators': 200, 'select__k': 40}
+  Fold 4: {'clf__max_depth': None, 'clf__n_estimators': 100, 'select__k': 20}
+  Fold 5: {'clf__max_depth': None, 'clf__n_estimators': 200, 'select__k': 20}
+
+FINAL MODEL RESULTS
+---------------------------------------------
+Best hyperparameters: {'clf__max_depth': None, 'clf__n_estimators': 100, 'select__k': 40}
+
+TRAINING SET PERFORMANCE
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Accuracy: 1.000
+Confusion Matrix:
+[[34  0]
+ [ 0 31]]
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00        34
+           1       1.00      1.00      1.00        31
+
+    accuracy                           1.00        65
+   macro avg       1.00      1.00      1.00        65
+weighted avg       1.00      1.00      1.00        65
+
+Precision: 1.000
+Recall: 1.000
+Specificity: 1.000
+F1: 1.000
+Auc: 1.000
+
+HOLD-OUT TEST SET PERFORMANCE (20%)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Accuracy: 0.647
+Precision: 0.625
+Recall: 0.625
+Specificity: 0.667
+F1 score: 0.625
+ROC AUC: 0.667
+Confusion Matrix:
+[[6 3]
+ [3 5]]
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.67      0.67      0.67         9
+           1       0.62      0.62      0.62         8
+
+    accuracy                           0.65        17
+   macro avg       0.65      0.65      0.65        17
+weighted avg       0.65      0.65      0.65        17
+
+
+TOP FEATURES PREVIEW (first 20 shown):
+---------------------------------------------
+cerebrum_frontallobe_glszm_ZoneVariance_RL_absdiff                      0.067620
+cerebrum_frontallobe_glszm_LargeAreaLowGrayLevelEmphasis_RL_absdiff     0.060978
+cerebrum_frontallobe_glszm_LargeAreaEmphasis_RL_absdiff                 0.050434
+cerebrum_sub-lobar_firstorder_Energy_RL_absdiff                         0.045254
+cerebrum_temporallobe_gldm_HighGrayLevelEmphasis_RL_absdiff             0.040472
+cerebrum_temporallobe_glcm_MaximumProbability_RL_absdiff                0.038580
+cerebrum_sub-lobar_firstorder_TotalEnergy_RL_absdiff                    0.035102
+cerebrum_temporallobe_glrlm_RunLengthNonUniformity_RL_absdiff           0.031544
+cerebrum_sub-lobar_firstorder_RootMeanSquared_RL_absdiff                0.031254
+cerebrum_temporallobe_glszm_LargeAreaEmphasis_RL_absdiff                0.029392
+full_ct_ngtdm_Strength                                                  0.029298
+cerebrum_sub-lobar_glrlm_LongRunEmphasis_RL_absdiff                     0.028335
+cerebrum_temporallobe_glcm_SumAverage_RL_absdiff                        0.028137
+cerebrum_temporallobe_glcm_Contrast_RL_absdiff                          0.027793
+cerebrum_temporallobe_glrlm_HighGrayLevelRunEmphasis_RL_absdiff         0.027755
+cerebrum_temporallobe_glszm_ZoneVariance_RL_absdiff                     0.026481
+cerebrum_limbiclobe_ngtdm_Coarseness_RL_absdiff                         0.026064
+cerebrum_frontallobe_glszm_LargeAreaHighGrayLevelEmphasis_RL_absdiff    0.024968
+cerebrum_frontallobe_glszm_SmallAreaEmphasis_RL_absdiff                 0.024775
+cerebrum_temporallobe_glrlm_GrayLevelVariance_RL_absdiff                0.023443
+
+FULL RANKED FEATURE LIST:
+---------------------------------------------
+cerebrum_frontallobe_glszm_ZoneVariance_RL_absdiff                        0.067620
+cerebrum_frontallobe_glszm_LargeAreaLowGrayLevelEmphasis_RL_absdiff       0.060978
+cerebrum_frontallobe_glszm_LargeAreaEmphasis_RL_absdiff                   0.050434
+cerebrum_sub-lobar_firstorder_Energy_RL_absdiff                           0.045254
+cerebrum_temporallobe_gldm_HighGrayLevelEmphasis_RL_absdiff               0.040472
+cerebrum_temporallobe_glcm_MaximumProbability_RL_absdiff                  0.038580
+cerebrum_sub-lobar_firstorder_TotalEnergy_RL_absdiff                      0.035102
+cerebrum_temporallobe_glrlm_RunLengthNonUniformity_RL_absdiff             0.031544
+cerebrum_sub-lobar_firstorder_RootMeanSquared_RL_absdiff                  0.031254
+cerebrum_temporallobe_glszm_LargeAreaEmphasis_RL_absdiff                  0.029392
+full_ct_ngtdm_Strength                                                    0.029298
+cerebrum_sub-lobar_glrlm_LongRunEmphasis_RL_absdiff                       0.028335
+cerebrum_temporallobe_glcm_SumAverage_RL_absdiff                          0.028137
+cerebrum_temporallobe_glcm_Contrast_RL_absdiff                            0.027793
+cerebrum_temporallobe_glrlm_HighGrayLevelRunEmphasis_RL_absdiff           0.027755
+cerebrum_temporallobe_glszm_ZoneVariance_RL_absdiff                       0.026481
+cerebrum_limbiclobe_ngtdm_Coarseness_RL_absdiff                           0.026064
+cerebrum_frontallobe_glszm_LargeAreaHighGrayLevelEmphasis_RL_absdiff      0.024968
+cerebrum_frontallobe_glszm_SmallAreaEmphasis_RL_absdiff                   0.024775
+cerebrum_temporallobe_glrlm_GrayLevelVariance_RL_absdiff                  0.023443
+cerebrum_temporallobe_glszm_LargeAreaLowGrayLevelEmphasis_RL_absdiff      0.022531
+cerebrum_temporallobe_glrlm_ShortRunHighGrayLevelEmphasis_RL_absdiff      0.021685
+cerebrum_temporallobe_firstorder_90Percentile_RL_absdiff                  0.021527
+cerebrum_sub-lobar_firstorder_Skewness_RL_absdiff                         0.020499
+cerebrum_sub-lobar_firstorder_Mean_RL_absdiff                             0.020134
+cerebrum_frontallobe_glszm_GrayLevelNonUniformity_RL_absdiff              0.019575
+cerebrum_temporallobe_firstorder_Energy_RL_absdiff                        0.018517
+cerebrum_temporallobe_firstorder_TotalEnergy_RL_absdiff                   0.016482
+cerebrum_temporallobe_gldm_DependenceVariance_RL_absdiff                  0.016243
+cerebrum_frontallobe_firstorder_Kurtosis_RL_absdiff                       0.015497
+cerebrum_temporallobe_firstorder_Uniformity_RL_absdiff                    0.015036
+cerebrum_temporallobe_glcm_Autocorrelation_RL_absdiff                     0.014668
+cerebrum_temporallobe_glcm_JointAverage_RL_absdiff                        0.013322
+cerebrum_temporallobe_gldm_DependenceEntropy_RL_absdiff                   0.012066
+cerebrum_temporallobe_glcm_DifferenceVariance_RL_absdiff                  0.011388
+cerebrum_temporallobe_firstorder_RootMeanSquared_RL_absdiff               0.011136
+cerebrum_temporallobe_glcm_JointEnergy_RL_absdiff                         0.008601
+cerebrum_sub-lobar_glcm_ClusterShade_RL_absdiff                           0.008205
+cerebrum_sub-lobar_gldm_DependenceNonUniformityNormalized_RL_absdiff      0.008045
+cerebrum_frontallobe_glszm_GrayLevelNonUniformityNormalized_RL_absdiff    0.007167
+
+ALL SELECTED FEATURES (ordered):
+---------------------------------------------
+  1. cerebrum_frontallobe_glszm_ZoneVariance_RL_absdiff
+  2. cerebrum_frontallobe_glszm_LargeAreaLowGrayLevelEmphasis_RL_absdiff
+  3. cerebrum_frontallobe_glszm_LargeAreaEmphasis_RL_absdiff
+  4. cerebrum_sub-lobar_firstorder_Energy_RL_absdiff
+  5. cerebrum_temporallobe_gldm_HighGrayLevelEmphasis_RL_absdiff
+  6. cerebrum_temporallobe_glcm_MaximumProbability_RL_absdiff
+  7. cerebrum_sub-lobar_firstorder_TotalEnergy_RL_absdiff
+  8. cerebrum_temporallobe_glrlm_RunLengthNonUniformity_RL_absdiff
+  9. cerebrum_sub-lobar_firstorder_RootMeanSquared_RL_absdiff
+ 10. cerebrum_temporallobe_glszm_LargeAreaEmphasis_RL_absdiff
+ 11. full_ct_ngtdm_Strength
+ 12. cerebrum_sub-lobar_glrlm_LongRunEmphasis_RL_absdiff
+ 13. cerebrum_temporallobe_glcm_SumAverage_RL_absdiff
+ 14. cerebrum_temporallobe_glcm_Contrast_RL_absdiff
+ 15. cerebrum_temporallobe_glrlm_HighGrayLevelRunEmphasis_RL_absdiff
+ 16. cerebrum_temporallobe_glszm_ZoneVariance_RL_absdiff
+ 17. cerebrum_limbiclobe_ngtdm_Coarseness_RL_absdiff
+ 18. cerebrum_frontallobe_glszm_LargeAreaHighGrayLevelEmphasis_RL_absdiff
+ 19. cerebrum_frontallobe_glszm_SmallAreaEmphasis_RL_absdiff
+ 20. cerebrum_temporallobe_glrlm_GrayLevelVariance_RL_absdiff
+ 21. cerebrum_temporallobe_glszm_LargeAreaLowGrayLevelEmphasis_RL_absdiff
+ 22. cerebrum_temporallobe_glrlm_ShortRunHighGrayLevelEmphasis_RL_absdiff
+ 23. cerebrum_temporallobe_firstorder_90Percentile_RL_absdiff
+ 24. cerebrum_sub-lobar_firstorder_Skewness_RL_absdiff
+ 25. cerebrum_sub-lobar_firstorder_Mean_RL_absdiff
+ 26. cerebrum_frontallobe_glszm_GrayLevelNonUniformity_RL_absdiff
+ 27. cerebrum_temporallobe_firstorder_Energy_RL_absdiff
+ 28. cerebrum_temporallobe_firstorder_TotalEnergy_RL_absdiff
+ 29. cerebrum_temporallobe_gldm_DependenceVariance_RL_absdiff
+ 30. cerebrum_frontallobe_firstorder_Kurtosis_RL_absdiff
+ 31. cerebrum_temporallobe_firstorder_Uniformity_RL_absdiff
+ 32. cerebrum_temporallobe_glcm_Autocorrelation_RL_absdiff
+ 33. cerebrum_temporallobe_glcm_JointAverage_RL_absdiff
+ 34. cerebrum_temporallobe_gldm_DependenceEntropy_RL_absdiff
+ 35. cerebrum_temporallobe_glcm_DifferenceVariance_RL_absdiff
+ 36. cerebrum_temporallobe_firstorder_RootMeanSquared_RL_absdiff
+ 37. cerebrum_temporallobe_glcm_JointEnergy_RL_absdiff
+ 38. cerebrum_sub-lobar_glcm_ClusterShade_RL_absdiff
+ 39. cerebrum_sub-lobar_gldm_DependenceNonUniformityNormalized_RL_absdiff
+ 40. cerebrum_frontallobe_glszm_GrayLevelNonUniformityNormalized_RL_absdiff

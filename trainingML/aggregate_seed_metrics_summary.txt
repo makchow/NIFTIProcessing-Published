@@ -1,0 +1,43 @@
+Aggregated Seed Performance Summary
+========================================
+
+Model: lr
+Seeds: [1292, 4337, 5590, 3348, 3930, 2253, 2400, 7705, 6993, 7322]
+Nested Mean Acc (mean, 95% CI): 0.654 ± 0.025 [0.629, 0.679]
+Hold-out Accuracy (mean, 95% CI): 0.706 ± 0.045 [0.660, 0.751]
+Hold-out Precision (mean, 95% CI): 0.715 ± 0.055 [0.660, 0.770]
+Hold-out Recall (mean, 95% CI): 0.625 ± 0.063 [0.562, 0.688]
+Hold-out Specificity (mean, 95% CI): 0.778 ± 0.046 [0.732, 0.824]
+Hold-out F1 Score (mean, 95% CI): 0.665 ± 0.055 [0.610, 0.720]
+Hold-out AUC (mean, 95% CI): 0.719 ± 0.051 [0.668, 0.770]
+----------------------------------------
+Model: rf
+Seeds: [1292, 4337, 5590, 3348, 3930, 2253, 2400, 7705, 6993, 7322]
+Nested Mean Acc (mean, 95% CI): 0.623 ± 0.027 [0.596, 0.650]
+Hold-out Accuracy (mean, 95% CI): 0.647 ± 0.077 [0.570, 0.724]
+Hold-out Precision (mean, 95% CI): 0.672 ± 0.111 [0.561, 0.784]
+Hold-out Recall (mean, 95% CI): 0.562 ± 0.098 [0.464, 0.661]
+Hold-out Specificity (mean, 95% CI): 0.722 ± 0.118 [0.604, 0.840]
+Hold-out F1 Score (mean, 95% CI): 0.597 ± 0.087 [0.510, 0.683]
+Hold-out AUC (mean, 95% CI): 0.706 ± 0.058 [0.648, 0.764]
+----------------------------------------
+Model: xgb
+Seeds: [1292, 4337, 5590, 3348, 3930, 2253, 2400, 7705, 6993, 7322]
+Nested Mean Acc (mean, 95% CI): 0.584 ± 0.032 [0.553, 0.616]
+Hold-out Accuracy (mean, 95% CI): 0.547 ± 0.052 [0.495, 0.599]
+Hold-out Precision (mean, 95% CI): 0.514 ± 0.059 [0.455, 0.572]
+Hold-out Recall (mean, 95% CI): 0.525 ± 0.114 [0.411, 0.639]
+Hold-out Specificity (mean, 95% CI): 0.567 ± 0.076 [0.491, 0.642]
+Hold-out F1 Score (mean, 95% CI): 0.510 ± 0.078 [0.432, 0.589]
+Hold-out AUC (mean, 95% CI): 0.610 ± 0.072 [0.539, 0.682]
+----------------------------------------
+Model: xgbrf
+Seeds: [1292, 4337, 5590, 3348, 3930, 2253, 2400, 7705, 6993, 7322]
+Nested Mean Acc (mean, 95% CI): 0.602 ± 0.017 [0.585, 0.619]
+Hold-out Accuracy (mean, 95% CI): 0.606 ± 0.052 [0.554, 0.658]
+Hold-out Precision (mean, 95% CI): 0.649 ± 0.102 [0.547, 0.751]
+Hold-out Recall (mean, 95% CI): 0.463 ± 0.090 [0.373, 0.552]
+Hold-out Specificity (mean, 95% CI): 0.733 ± 0.118 [0.615, 0.851]
+Hold-out F1 Score (mean, 95% CI): 0.517 ± 0.066 [0.450, 0.583]
+Hold-out AUC (mean, 95% CI): 0.676 ± 0.077 [0.600, 0.753]
+----------------------------------------

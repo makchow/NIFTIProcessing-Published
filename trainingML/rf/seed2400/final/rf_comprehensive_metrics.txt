@@ -1,0 +1,100 @@
+ML Pipeline Comprehensive Report
+==================================================
+
+NESTED CROSS-VALIDATION RESULTS (Unbiased Performance)
+-------------------------------------------------------
+Mean test accuracy: 0.635 ± 0.094
+All test accuracies: [0.6470588235294118, 0.5882352941176471, 0.5625, 0.5625, 0.8125]
+Best hyperparameters per fold:
+  Fold 1: {'clf__max_depth': None, 'clf__n_estimators': 100, 'select__k': 10}
+  Fold 2: {'clf__max_depth': None, 'clf__n_estimators': 200, 'select__k': 70}
+  Fold 3: {'clf__max_depth': None, 'clf__n_estimators': 100, 'select__k': 20}
+  Fold 4: {'clf__max_depth': 5, 'clf__n_estimators': 100, 'select__k': 50}
+  Fold 5: {'clf__max_depth': None, 'clf__n_estimators': 100, 'select__k': 10}
+
+FINAL MODEL RESULTS
+---------------------------------------------
+Best hyperparameters: {'clf__max_depth': None, 'clf__n_estimators': 100, 'select__k': 10}
+
+TRAINING SET PERFORMANCE
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Accuracy: 1.000
+Confusion Matrix:
+[[34  0]
+ [ 0 31]]
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00        34
+           1       1.00      1.00      1.00        31
+
+    accuracy                           1.00        65
+   macro avg       1.00      1.00      1.00        65
+weighted avg       1.00      1.00      1.00        65
+
+Precision: 1.000
+Recall: 1.000
+Specificity: 1.000
+F1: 1.000
+Auc: 1.000
+
+HOLD-OUT TEST SET PERFORMANCE (20%)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Accuracy: 0.647
+Precision: 0.600
+Recall: 0.750
+Specificity: 0.556
+F1 score: 0.667
+ROC AUC: 0.694
+Confusion Matrix:
+[[5 4]
+ [2 6]]
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.71      0.56      0.62         9
+           1       0.60      0.75      0.67         8
+
+    accuracy                           0.65        17
+   macro avg       0.66      0.65      0.65        17
+weighted avg       0.66      0.65      0.64        17
+
+
+TOP FEATURES PREVIEW (first 20 shown):
+---------------------------------------------
+cerebrum_frontallobe_firstorder_RootMeanSquared_RL_absdiff              0.125100
+cerebrum_frontallobe_glszm_LargeAreaLowGrayLevelEmphasis_RL_absdiff     0.122762
+cerebrum_frontallobe_firstorder_Mean_RL_absdiff                         0.107330
+cerebrum_frontallobe_firstorder_Energy_RL_absdiff                       0.106765
+cerebrum_sub-lobar_firstorder_Skewness_RL_absdiff                       0.104997
+cerebrum_frontallobe_glszm_ZoneVariance_RL_absdiff                      0.103082
+cerebrum_frontallobe_glszm_LargeAreaEmphasis_RL_absdiff                 0.087128
+cerebrum_frontallobe_firstorder_TotalEnergy_RL_absdiff                  0.084720
+cerebrum_limbiclobe_ngtdm_Coarseness_RL_absdiff                         0.083583
+cerebrum_frontallobe_glszm_LargeAreaHighGrayLevelEmphasis_RL_absdiff    0.074533
+
+FULL RANKED FEATURE LIST:
+---------------------------------------------
+cerebrum_frontallobe_firstorder_RootMeanSquared_RL_absdiff              0.125100
+cerebrum_frontallobe_glszm_LargeAreaLowGrayLevelEmphasis_RL_absdiff     0.122762
+cerebrum_frontallobe_firstorder_Mean_RL_absdiff                         0.107330
+cerebrum_frontallobe_firstorder_Energy_RL_absdiff                       0.106765
+cerebrum_sub-lobar_firstorder_Skewness_RL_absdiff                       0.104997
+cerebrum_frontallobe_glszm_ZoneVariance_RL_absdiff                      0.103082
+cerebrum_frontallobe_glszm_LargeAreaEmphasis_RL_absdiff                 0.087128
+cerebrum_frontallobe_firstorder_TotalEnergy_RL_absdiff                  0.084720
+cerebrum_limbiclobe_ngtdm_Coarseness_RL_absdiff                         0.083583
+cerebrum_frontallobe_glszm_LargeAreaHighGrayLevelEmphasis_RL_absdiff    0.074533
+
+ALL SELECTED FEATURES (ordered):
+---------------------------------------------
+  1. cerebrum_frontallobe_firstorder_RootMeanSquared_RL_absdiff
+  2. cerebrum_frontallobe_glszm_LargeAreaLowGrayLevelEmphasis_RL_absdiff
+  3. cerebrum_frontallobe_firstorder_Mean_RL_absdiff
+  4. cerebrum_frontallobe_firstorder_Energy_RL_absdiff
+  5. cerebrum_sub-lobar_firstorder_Skewness_RL_absdiff
+  6. cerebrum_frontallobe_glszm_ZoneVariance_RL_absdiff
+  7. cerebrum_frontallobe_glszm_LargeAreaEmphasis_RL_absdiff
+  8. cerebrum_frontallobe_firstorder_TotalEnergy_RL_absdiff
+  9. cerebrum_limbiclobe_ngtdm_Coarseness_RL_absdiff
+ 10. cerebrum_frontallobe_glszm_LargeAreaHighGrayLevelEmphasis_RL_absdiff

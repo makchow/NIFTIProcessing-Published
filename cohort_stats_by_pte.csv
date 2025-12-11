@@ -1,0 +1,46 @@
+Characteristic,PTE,No PTE
+Age at CT (mean ± SD),50.2 ± 20.8,49.0 ± 18.7
+Male,27,31
+Female,12,12
+tobacco_use: High Risk,3,6
+tobacco_use: Medium Risk,13,7
+tobacco_use: Low Risk,13,16
+tobacco_use: Not At Risk,0,0
+tobacco_use: Missing,10,14
+alcohol_use: Alcohol Misuse,11,12
+alcohol_use: Not At Risk,6,5
+alcohol_use: Missing,22,26
+financial_resource_strain: At risk,5,3
+financial_resource_strain: Not at risk,0,0
+financial_resource_strain: Missing,33,38
+food_insecurity: Food Insecurity Present,4,4
+food_insecurity: No Food Insecurity,21,19
+food_insecurity: Missing,14,20
+transportation_needs: Unmet Transportation Needs,2,1
+transportation_needs: No Transportation Needs,20,19
+transportation_needs: Missing,17,23
+physical_activity: Inactive,3,2
+physical_activity: Insufficiently Active,2,1
+physical_activity: Sufficiently Active,2,2
+physical_activity: Missing,32,38
+stress: Stress Concern Present,4,5
+stress: No Stress Concern Present,2,0
+stress: Missing,33,38
+social_connections: Socially Isolated,1,0
+social_connections: Moderately Isolated,5,9
+social_connections: Moderately Integrated,4,1
+social_connections: Missing,29,33
+intimate_partner_violence: Patient Declined,8,8
+intimate_partner_violence: Missing,23,17
+depression: Moderate depression,1,4
+depression: None or minimal depression,19,23
+depression: Missing,19,16
+housing_stability: At Risk,18,17
+housing_stability: Not At Risk,0,0
+housing_stability: Missing,19,22
+utilities: At Risk,11,9
+utilities: Not At Risk,10,8
+utilities: Missing,18,26
+health_literacy: Inadequate Health Literacy,7,1
+health_literacy: Not At Risk,3,3
+health_literacy: Missing,29,39
